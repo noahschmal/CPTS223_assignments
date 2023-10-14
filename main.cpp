@@ -2,6 +2,7 @@
 
 
 #include <random>
+#include <algorithm>
 
 // Verificiation: CMake works
 
@@ -18,7 +19,7 @@ int main () {
 	}
 
 	unsigned seed = 0;
-	shuffle(&data3[0], &data3[49], std::default_random_engine(seed));
+	std::shuffle(&data3[0], &data3[49], std::default_random_engine(seed));
 
 
     // Create three trees and insert the data
