@@ -18,7 +18,7 @@ int main () {
 	}
 
 	unsigned seed = 0;
-	std::shuffle(&data3[0], &data3[49], std::default_random_engine(seed));
+	shuffle(&data3[0], &data3[49], std::default_random_engine(seed));
 
 
     // Create three trees and insert the data
